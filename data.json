@@ -1,0 +1,53 @@
+{
+  "rbac": {
+    "users": {
+      "1": {
+        "name": "bob"
+      },
+      "2": {
+        "name": "alice"
+      },
+      "3": {
+        "name": "john"
+      }
+    },
+    "roles": {
+      "1": {
+        "name": "teller"
+      },
+      "2": {
+        "name": "manager"
+      },
+      "3": {
+        "name": "supervison"
+      }
+    },
+    "permissions": {
+      "1": {
+        "name": "read_something"
+      },
+      "2": {
+        "name": "write_something"
+      },
+      "3": {
+        "name": "delete_something"
+      },
+      "4": {
+        "name": "print_something"
+      }
+    },
+    "users_roles": [
+      ["1", "1"],
+      ["2", "2"],
+      ["3", "1"],
+      ["3", "3"]
+    ],
+    "roles_permissions": [
+      ["1", "1"],
+      ["2", "1"],
+      ["2", "2"],
+      ["3", "3"],
+      ["3", "4"]
+    ]
+  }
+}
